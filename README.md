@@ -1,5 +1,11 @@
 # .dotfiles
 
+## Stow
+
+```sh
+stow --restow --no-folding <DIR>
+```
+
 ## Fonts
 
 Reload locally (`~/.local/share/fonts`) installed fonts:
@@ -8,8 +14,16 @@ Reload locally (`~/.local/share/fonts`) installed fonts:
 fc-cache -f -v
 ```
 
-## Stow
+## Dependencies (Debian)
+
+To show all installed packages by `apt`:
 
 ```sh
-stow --restow --no-folding <DIR>
+apt list --installed > apt.list
+```
+
+To show all sources:
+
+```sh
+grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/* > sources.list
 ```
