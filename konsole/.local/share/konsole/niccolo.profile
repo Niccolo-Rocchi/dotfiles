@@ -1,6 +1,6 @@
 [Appearance]
 AntiAliasFonts=true
-ColorScheme=One-Dark
+ColorScheme=Gruvbox
 Font=FiraCode Nerd Font Mono,11,-1,5,50,0,0,0,0,0
 
 [General]
