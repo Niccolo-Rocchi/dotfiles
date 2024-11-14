@@ -1,0 +1,12 @@
+[user]
+	name = Niccolo-Rocchi
+	email = nik9991u@gmail.com
+	signingkey = /home/niccolo/.ssh/id_ed25519.pub
+[init]
+	defaultBranch = main
+[core]
+	editor = nano
+[gpg]
+	format = ssh
+[credential]
+	helper = store
