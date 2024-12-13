@@ -6,6 +6,10 @@
 stow --restow --no-folding <DIR>
 ```
 
+## Fish
+
+Install `fish` shell and [starship](https://starship.rs/) prompt. Then, use `stow` for `fish` as explained here.
+
 ## VSCode/Codium
 
 List all extensions into a file:
@@ -28,7 +32,7 @@ Reload locally (`~/.local/share/fonts`) installed fonts:
 fc-cache -f -v
 ```
 
-## Dependencies (Debian)
+## Dependencies (Debian 12 Bookworm)
 
 To show all installed packages by `apt`:
 
