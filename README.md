@@ -45,3 +45,8 @@ To show all sources:
 ```sh
 grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/* > sources.list
 ```
+## Vim
+
+Plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug?tab=readme-ov-file) and their names are recorded into the `~/.vimrc` file.
+
+To activate the plugins, install `vim-plug`. Then, open `vim` and do `:PlugInstall`. Reload `vim` to use the plugins.
