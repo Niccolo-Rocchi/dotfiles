@@ -1,14 +1,18 @@
-# .dotfiles
+# dotfiles
 
 ## Stow
+
+`<DIR>` is a directory inside `dotfiles/` that need to be stowed. To do this, run:
 
 ```sh
 stow --restow --no-folding <DIR>
 ```
 
+When stowing, if a target is encountered which already exists but is a plain file (and hence not owned by any existing stow package), then normally Stow will register this as a conflict and refuse to proceed. In this case, run: `stow --adopt <DIR>` to replace the contents of `<DIR>` with the targets. Then, run something like: `git --reset hard` to restore the contents.
+
 ## Fish
 
-Install `fish` shell and [starship](https://starship.rs/) prompt. Then, use `stow` for `fish` as explained here.
+Install `fish` shell and [starship](https://starship.rs/) prompt. Then, use `stow` for `fish`.
 
 ## VSCode/Codium
 
