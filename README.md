@@ -38,16 +38,16 @@ fc-cache -f -v
 
 ## Dependencies (Debian 12 Bookworm)
 
-To show all installed packages by `apt`:
+To record all installed packages by `apt`:
 
 ```sh
-apt list --installed > apt.list
+apt list --installed > .dependencies/apt.list
 ```
 
-To show all sources:
+To record all sources:
 
 ```sh
-grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/* > sources.list
+grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/* > .dependencies/sources.list
 ```
 ## Vim
 
