@@ -1,4 +1,4 @@
-# dotfiles
+# Nik's dotfiles
 
 ## Stow
 
@@ -10,9 +10,42 @@ stow --restow --no-folding <DIR>
 
 When stowing, if a target is encountered which already exists but is a plain file (and hence not owned by any existing stow package), then normally Stow will register this as a conflict and refuse to proceed. In this case, run: `stow --adopt <DIR>` to replace the contents of `<DIR>` with the targets. Then, run something like: `git --reset hard` to restore the contents.
 
+## KDE
+
+KDE configurations are managed by [konsave](https://github.com/Prayag2/konsave).
+
+Create and activate a Python virtual environment into the `home` directory. Then install `konsave` in it:
+
+```sh
+python -m pip install konsave
+```
+
+Choose and import a `<theme>`:
+
+```sh
+konsave -i ~/dotfiles/konsave-themes/<theme>.knsv
+```
+
+Apply the `<theme>`:
+
+```sh
+konsave -a <theme>
+```
+Finally, log-out and log-it to see the theme applied.
+
+Other possible flags are: `-h` for help, `-s` to save the current theme, `-l` to list all themes, `-r` to remove a theme, `-e` to export a theme, `-w` to wipe all themes.
+
+
 ## Fish
 
-Install `fish` shell and [starship](https://starship.rs/) prompt. Then, use `stow` for `fish`.
+Install `fish` shell and the [starship](https://starship.rs/) prompt. Then, use `stow` for `fish`.
+
+Remember: Python `venv` must be activated by:
+
+```sh
+python3 -m venv venv
+source venv/bin/activate.fish
+```
 
 ## VSCode/Codium
 
