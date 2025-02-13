@@ -35,6 +35,10 @@ Finally, log-out and log-it to see the theme applied.
 
 Other possible flags are: `-h` for help, `-s` to save the current theme, `-l` to list all themes, `-r` to remove a theme, `-e` to export a theme, `-w` to wipe all themes.
 
+### Troubleshooting
+
+Some downloaded Plasma themes create problems, e.g. they overwrite the default theme. If `konsave -a <theme>` does not have the desired effect, it may be necessary to remove some of these folders/files `ls ~/.local/share/plasma*` and then reboot before using `konsave`.
+
 
 ## Fish
 
