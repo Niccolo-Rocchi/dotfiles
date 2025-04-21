@@ -1,4 +1,13 @@
 {
     "r.plot.useHttpgd": true,
-    "r.lsp.diagnostics": false
+    "r.lsp.diagnostics": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": false
+    },
+    "jupyter.askForKernelRestart": false,
+    "git.confirmSync": false
 }
