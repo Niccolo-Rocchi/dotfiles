@@ -9,5 +9,11 @@
         "python": false
     },
     "jupyter.askForKernelRestart": false,
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "remote.SSH.useExecServer": false,
+    "remote.SSH.useLocalServer": false,
+    "remote.SSH.remotePlatform": {
+        "ferris": "linux"
+    }
 }
