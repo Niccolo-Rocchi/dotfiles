@@ -10,10 +10,18 @@
     },
     "jupyter.askForKernelRestart": false,
     "git.confirmSync": false,
-    "workbench.colorTheme": "Visual Studio Dark",
     "remote.SSH.useExecServer": false,
     "remote.SSH.useLocalServer": false,
     "remote.SSH.remotePlatform": {
         "ferris": "linux"
-    }
+    },
+
+    "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+  },
+  "isort.args":["--profile", "black"],
 }
